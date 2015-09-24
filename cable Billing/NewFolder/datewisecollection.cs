@@ -10,19 +10,24 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1.NewFolder
 {
-    public partial class mainwindow : Form
+    public partial class bill : Form
     {
-        public mainwindow()
+        public bill()
         {
             InitializeComponent();
         }
 
-        private void collectionToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void groupBox2_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void searchCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bill_Load(object sender, EventArgs e)
         {
 
         }

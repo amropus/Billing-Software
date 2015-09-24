@@ -56,6 +56,12 @@
     <Compile Include="NewFolder\Amropussplash1.Designer.cs">
       <DependentUpon>Amropussplash1.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewFolder\datewisecollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFolder\datewisecollection.designer.cs">
+      <DependentUpon>datewisecollection.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewFolder\bill.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewFolder\Amropussplash1.resx">
       <DependentUpon>Amropussplash1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder\datewisecollection.resx">
+      <DependentUpon>datewisecollection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewFolder\bill.resx">
       <DependentUpon>bill.cs</DependentUpon>
