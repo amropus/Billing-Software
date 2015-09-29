@@ -30,19 +30,21 @@
         {
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnsave = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.billgroupbox = new System.Windows.Forms.GroupBox();
+            this.dtpbill1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpbill = new System.Windows.Forms.DateTimePicker();
+            this.btnreport = new System.Windows.Forms.Button();
+            this.btnclose1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.groupBox2.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.txtamount = new System.Windows.Forms.TextBox();
+            this.amtgroupbox = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.billgroupbox.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.amtgroupbox.SuspendLayout();
             this.SuspendLayout();
             // 
             // label8
@@ -66,95 +68,78 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "To Date";
             // 
-            // groupBox2
+            // billgroupbox
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.groupBox2.Controls.Add(this.dateTimePicker2);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(32, 22);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(514, 74);
-            this.groupBox2.TabIndex = 18;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Search Bill";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            this.billgroupbox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.billgroupbox.Controls.Add(this.dtpbill1);
+            this.billgroupbox.Controls.Add(this.dtpbill);
+            this.billgroupbox.Controls.Add(this.label2);
+            this.billgroupbox.Controls.Add(this.label8);
+            this.billgroupbox.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.billgroupbox.Location = new System.Drawing.Point(32, 66);
+            this.billgroupbox.Name = "billgroupbox";
+            this.billgroupbox.Size = new System.Drawing.Size(514, 74);
+            this.billgroupbox.TabIndex = 18;
+            this.billgroupbox.TabStop = false;
+            this.billgroupbox.Text = "Search Bill";
+            this.billgroupbox.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // btnsave
+            // dtpbill1
             // 
-            this.btnsave.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsave.Location = new System.Drawing.Point(135, 12);
-            this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(103, 32);
-            this.btnsave.TabIndex = 22;
-            this.btnsave.Text = "Report";
-            this.btnsave.UseVisualStyleBackColor = true;
+            this.dtpbill1.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpbill1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpbill1.Location = new System.Drawing.Point(334, 33);
+            this.dtpbill1.Name = "dtpbill1";
+            this.dtpbill1.Size = new System.Drawing.Size(174, 22);
+            this.dtpbill1.TabIndex = 13;
             // 
-            // button2
+            // dtpbill
             // 
-            this.button2.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(276, 13);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 31);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "Close";
-            this.button2.UseVisualStyleBackColor = true;
+            this.dtpbill.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpbill.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpbill.Location = new System.Drawing.Point(89, 33);
+            this.dtpbill.Name = "dtpbill";
+            this.dtpbill.Size = new System.Drawing.Size(172, 22);
+            this.dtpbill.TabIndex = 12;
             // 
-            // dateTimePicker1
+            // btnreport
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(89, 33);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(172, 22);
-            this.dateTimePicker1.TabIndex = 12;
+            this.btnreport.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnreport.Location = new System.Drawing.Point(135, 12);
+            this.btnreport.Name = "btnreport";
+            this.btnreport.Size = new System.Drawing.Size(103, 32);
+            this.btnreport.TabIndex = 22;
+            this.btnreport.Text = "Report";
+            this.btnreport.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker2
+            // btnclose1
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(334, 33);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(174, 22);
-            this.dateTimePicker2.TabIndex = 13;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(32, 119);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(514, 57);
-            this.panel1.TabIndex = 26;
+            this.btnclose1.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnclose1.Location = new System.Drawing.Point(276, 13);
+            this.btnclose1.Name = "btnclose1";
+            this.btnclose1.Size = new System.Drawing.Size(111, 31);
+            this.btnclose1.TabIndex = 25;
+            this.btnclose1.Text = "Close";
+            this.btnclose1.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 20);
+            this.label1.Location = new System.Drawing.Point(10, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 18);
             this.label1.TabIndex = 11;
             this.label1.Text = "Total Income Amount :";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(240, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(241, 20);
-            this.textBox1.TabIndex = 14;
-            // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.SystemColors.ControlLight;
             this.groupBox3.Controls.Add(this.label14);
-            this.groupBox3.Controls.Add(this.btnsave);
-            this.groupBox3.Controls.Add(this.button2);
+            this.groupBox3.Controls.Add(this.btnreport);
+            this.groupBox3.Controls.Add(this.btnclose1);
             this.groupBox3.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(32, 193);
+            this.groupBox3.Location = new System.Drawing.Point(32, 222);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(514, 51);
             this.groupBox3.TabIndex = 27;
@@ -169,24 +154,67 @@
             this.label14.Size = new System.Drawing.Size(0, 18);
             this.label14.TabIndex = 1;
             // 
+            // txtamount
+            // 
+            this.txtamount.Location = new System.Drawing.Point(204, 8);
+            this.txtamount.Name = "txtamount";
+            this.txtamount.Size = new System.Drawing.Size(241, 28);
+            this.txtamount.TabIndex = 14;
+            // 
+            // amtgroupbox
+            // 
+            this.amtgroupbox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.amtgroupbox.Controls.Add(this.txtamount);
+            this.amtgroupbox.Controls.Add(this.label3);
+            this.amtgroupbox.Controls.Add(this.label1);
+            this.amtgroupbox.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amtgroupbox.Location = new System.Drawing.Point(32, 156);
+            this.amtgroupbox.Name = "amtgroupbox";
+            this.amtgroupbox.Size = new System.Drawing.Size(514, 51);
+            this.amtgroupbox.TabIndex = 28;
+            this.amtgroupbox.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(16, 217);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 18);
+            this.label3.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(186, 19);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(261, 33);
+            this.label5.TabIndex = 31;
+            this.label5.Text = "DateWise Collection";
+            // 
             // bill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 271);
+            this.ClientSize = new System.Drawing.Size(600, 310);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.amtgroupbox);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.billgroupbox);
             this.Name = "bill";
-            this.Text = "Date Wise Collection";
+            this.Text = "DateWise Collection";
             this.Load += new System.EventHandler(this.bill_Load);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.billgroupbox.ResumeLayout(false);
+            this.billgroupbox.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.amtgroupbox.ResumeLayout(false);
+            this.amtgroupbox.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -194,15 +222,17 @@
 
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnsave;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.GroupBox billgroupbox;
+        private System.Windows.Forms.Button btnreport;
+        private System.Windows.Forms.Button btnclose1;
+        private System.Windows.Forms.DateTimePicker dtpbill1;
+        private System.Windows.Forms.DateTimePicker dtpbill;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtamount;
+        private System.Windows.Forms.GroupBox amtgroupbox;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
     }
 }

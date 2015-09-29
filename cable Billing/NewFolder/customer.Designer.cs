@@ -29,37 +29,39 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txtname = new System.Windows.Forms.TextBox();
-            this.txtaddress = new System.Windows.Forms.TextBox();
+            this.csttxtname = new System.Windows.Forms.TextBox();
+            this.csttxtaddress = new System.Windows.Forms.TextBox();
             this.lbladd = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.csttxtmono = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtid = new System.Windows.Forms.TextBox();
+            this.csttxtid = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.txtstb = new System.Windows.Forms.TextBox();
+            this.cstdtp = new System.Windows.Forms.DateTimePicker();
+            this.csttxtstb = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtrent = new System.Windows.Forms.TextBox();
+            this.csttxtrent = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtcharge = new System.Windows.Forms.TextBox();
+            this.csttxtcharge = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.csttxtbalance = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btndelete = new System.Windows.Forms.Button();
-            this.btnupdate = new System.Windows.Forms.Button();
-            this.btncancel = new System.Windows.Forms.Button();
-            this.btnsave = new System.Windows.Forms.Button();
-            this.btnedit = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.gridcust = new System.Windows.Forms.DataGridView();
+            this.btngropubox = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.btnclose1 = new System.Windows.Forms.Button();
+            this.cstbtndelete = new System.Windows.Forms.Button();
+            this.cstbtnupdate = new System.Windows.Forms.Button();
+            this.cstbtncancel = new System.Windows.Forms.Button();
+            this.cstbtnsave = new System.Windows.Forms.Button();
+            this.cstbtnedit = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridcust)).BeginInit();
+            this.btngropubox.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -72,20 +74,20 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Name";
             // 
-            // txtname
+            // csttxtname
             // 
-            this.txtname.Location = new System.Drawing.Point(168, 67);
-            this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(322, 28);
-            this.txtname.TabIndex = 1;
+            this.csttxtname.Location = new System.Drawing.Point(168, 67);
+            this.csttxtname.Name = "csttxtname";
+            this.csttxtname.Size = new System.Drawing.Size(322, 28);
+            this.csttxtname.TabIndex = 1;
             // 
-            // txtaddress
+            // csttxtaddress
             // 
-            this.txtaddress.Location = new System.Drawing.Point(168, 102);
-            this.txtaddress.Multiline = true;
-            this.txtaddress.Name = "txtaddress";
-            this.txtaddress.Size = new System.Drawing.Size(322, 48);
-            this.txtaddress.TabIndex = 3;
+            this.csttxtaddress.Location = new System.Drawing.Point(168, 102);
+            this.csttxtaddress.Multiline = true;
+            this.csttxtaddress.Name = "csttxtaddress";
+            this.csttxtaddress.Size = new System.Drawing.Size(322, 48);
+            this.csttxtaddress.TabIndex = 3;
             // 
             // lbladd
             // 
@@ -97,12 +99,12 @@
             this.lbladd.TabIndex = 2;
             this.lbladd.Text = "Address";
             // 
-            // textBox1
+            // csttxtmono
             // 
-            this.textBox1.Location = new System.Drawing.Point(168, 156);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(146, 28);
-            this.textBox1.TabIndex = 5;
+            this.csttxtmono.Location = new System.Drawing.Point(168, 156);
+            this.csttxtmono.Name = "csttxtmono";
+            this.csttxtmono.Size = new System.Drawing.Size(146, 28);
+            this.csttxtmono.TabIndex = 5;
             // 
             // label2
             // 
@@ -114,13 +116,13 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Mobile No.";
             // 
-            // txtid
+            // csttxtid
             // 
-            this.txtid.Enabled = false;
-            this.txtid.Location = new System.Drawing.Point(168, 32);
-            this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(81, 28);
-            this.txtid.TabIndex = 7;
+            this.csttxtid.Enabled = false;
+            this.csttxtid.Location = new System.Drawing.Point(168, 32);
+            this.csttxtid.Name = "csttxtid";
+            this.csttxtid.Size = new System.Drawing.Size(81, 28);
+            this.csttxtid.TabIndex = 7;
             // 
             // label3
             // 
@@ -142,20 +144,20 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Connection Date";
             // 
-            // dateTimePicker1
+            // cstdtp
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(168, 190);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 9;
+            this.cstdtp.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cstdtp.Location = new System.Drawing.Point(168, 190);
+            this.cstdtp.Name = "cstdtp";
+            this.cstdtp.Size = new System.Drawing.Size(200, 22);
+            this.cstdtp.TabIndex = 9;
             // 
-            // txtstb
+            // csttxtstb
             // 
-            this.txtstb.Location = new System.Drawing.Point(168, 218);
-            this.txtstb.Name = "txtstb";
-            this.txtstb.Size = new System.Drawing.Size(146, 28);
-            this.txtstb.TabIndex = 11;
+            this.csttxtstb.Location = new System.Drawing.Point(168, 218);
+            this.csttxtstb.Name = "csttxtstb";
+            this.csttxtstb.Size = new System.Drawing.Size(146, 28);
+            this.csttxtstb.TabIndex = 11;
             // 
             // label5
             // 
@@ -167,12 +169,12 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "STB No.";
             // 
-            // txtrent
+            // csttxtrent
             // 
-            this.txtrent.Location = new System.Drawing.Point(168, 288);
-            this.txtrent.Name = "txtrent";
-            this.txtrent.Size = new System.Drawing.Size(81, 28);
-            this.txtrent.TabIndex = 13;
+            this.csttxtrent.Location = new System.Drawing.Point(168, 288);
+            this.csttxtrent.Name = "csttxtrent";
+            this.csttxtrent.Size = new System.Drawing.Size(81, 28);
+            this.csttxtrent.TabIndex = 13;
             // 
             // label6
             // 
@@ -184,12 +186,12 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Monthly Rent";
             // 
-            // txtcharge
+            // csttxtcharge
             // 
-            this.txtcharge.Location = new System.Drawing.Point(168, 322);
-            this.txtcharge.Name = "txtcharge";
-            this.txtcharge.Size = new System.Drawing.Size(81, 28);
-            this.txtcharge.TabIndex = 15;
+            this.csttxtcharge.Location = new System.Drawing.Point(168, 322);
+            this.csttxtcharge.Name = "csttxtcharge";
+            this.csttxtcharge.Size = new System.Drawing.Size(81, 28);
+            this.csttxtcharge.TabIndex = 15;
             // 
             // label7
             // 
@@ -204,22 +206,22 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.csttxtbalance);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.txtid);
-            this.groupBox1.Controls.Add(this.txtcharge);
+            this.groupBox1.Controls.Add(this.csttxtid);
+            this.groupBox1.Controls.Add(this.csttxtcharge);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.txtname);
-            this.groupBox1.Controls.Add(this.txtrent);
+            this.groupBox1.Controls.Add(this.csttxtname);
+            this.groupBox1.Controls.Add(this.csttxtrent);
             this.groupBox1.Controls.Add(this.lbladd);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.txtaddress);
-            this.groupBox1.Controls.Add(this.txtstb);
+            this.groupBox1.Controls.Add(this.csttxtaddress);
+            this.groupBox1.Controls.Add(this.csttxtstb);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.csttxtmono);
+            this.groupBox1.Controls.Add(this.cstdtp);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -230,12 +232,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Customer Details";
             // 
-            // textBox2
+            // csttxtbalance
             // 
-            this.textBox2.Location = new System.Drawing.Point(168, 253);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(81, 28);
-            this.textBox2.TabIndex = 17;
+            this.csttxtbalance.Location = new System.Drawing.Point(168, 253);
+            this.csttxtbalance.Name = "csttxtbalance";
+            this.csttxtbalance.Size = new System.Drawing.Size(81, 28);
+            this.csttxtbalance.TabIndex = 17;
             // 
             // label9
             // 
@@ -246,80 +248,6 @@
             this.label9.Size = new System.Drawing.Size(113, 18);
             this.label9.TabIndex = 16;
             this.label9.Text = "Opening Balance";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.label8.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(228, 9);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(221, 47);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "New Customer";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btndelete);
-            this.panel1.Controls.Add(this.btnupdate);
-            this.panel1.Controls.Add(this.btncancel);
-            this.panel1.Controls.Add(this.btnsave);
-            this.panel1.Controls.Add(this.btnedit);
-            this.panel1.Location = new System.Drawing.Point(623, 70);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(97, 236);
-            this.panel1.TabIndex = 18;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // btndelete
-            // 
-            this.btndelete.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndelete.Location = new System.Drawing.Point(10, 59);
-            this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(75, 27);
-            this.btndelete.TabIndex = 20;
-            this.btndelete.Text = "Delete";
-            this.btndelete.UseVisualStyleBackColor = true;
-            // 
-            // btnupdate
-            // 
-            this.btnupdate.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnupdate.Location = new System.Drawing.Point(10, 189);
-            this.btnupdate.Name = "btnupdate";
-            this.btnupdate.Size = new System.Drawing.Size(75, 27);
-            this.btnupdate.TabIndex = 19;
-            this.btnupdate.Text = "Update";
-            this.btnupdate.UseVisualStyleBackColor = true;
-            // 
-            // btncancel
-            // 
-            this.btncancel.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncancel.Location = new System.Drawing.Point(10, 103);
-            this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(75, 27);
-            this.btncancel.TabIndex = 17;
-            this.btncancel.Text = "Cancel";
-            this.btncancel.UseVisualStyleBackColor = true;
-            // 
-            // btnsave
-            // 
-            this.btnsave.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsave.Location = new System.Drawing.Point(10, 16);
-            this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(75, 27);
-            this.btnsave.TabIndex = 16;
-            this.btnsave.Text = "Save";
-            this.btnsave.UseVisualStyleBackColor = true;
-            // 
-            // btnedit
-            // 
-            this.btnedit.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnedit.Location = new System.Drawing.Point(10, 147);
-            this.btnedit.Name = "btnedit";
-            this.btnedit.Size = new System.Drawing.Size(75, 27);
-            this.btnedit.TabIndex = 18;
-            this.btnedit.Text = "Edit";
-            this.btnedit.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -338,23 +266,123 @@
             this.gridcust.Size = new System.Drawing.Size(488, 86);
             this.gridcust.TabIndex = 0;
             // 
+            // btngropubox
+            // 
+            this.btngropubox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btngropubox.Controls.Add(this.cstbtndelete);
+            this.btngropubox.Controls.Add(this.cstbtnupdate);
+            this.btngropubox.Controls.Add(this.cstbtncancel);
+            this.btngropubox.Controls.Add(this.cstbtnsave);
+            this.btngropubox.Controls.Add(this.cstbtnedit);
+            this.btngropubox.Controls.Add(this.label14);
+            this.btngropubox.Controls.Add(this.btnclose1);
+            this.btngropubox.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btngropubox.Location = new System.Drawing.Point(626, 70);
+            this.btngropubox.Name = "btngropubox";
+            this.btngropubox.Size = new System.Drawing.Size(121, 236);
+            this.btngropubox.TabIndex = 28;
+            this.btngropubox.TabStop = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(16, 217);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(0, 18);
+            this.label14.TabIndex = 1;
+            // 
+            // btnclose1
+            // 
+            this.btnclose1.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnclose1.Location = new System.Drawing.Point(276, 13);
+            this.btnclose1.Name = "btnclose1";
+            this.btnclose1.Size = new System.Drawing.Size(111, 31);
+            this.btnclose1.TabIndex = 25;
+            this.btnclose1.Text = "Close";
+            this.btnclose1.UseVisualStyleBackColor = true;
+            // 
+            // cstbtndelete
+            // 
+            this.cstbtndelete.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cstbtndelete.Location = new System.Drawing.Point(19, 58);
+            this.cstbtndelete.Name = "cstbtndelete";
+            this.cstbtndelete.Size = new System.Drawing.Size(75, 28);
+            this.cstbtndelete.TabIndex = 30;
+            this.cstbtndelete.Text = "Delete";
+            this.cstbtndelete.UseVisualStyleBackColor = true;
+            // 
+            // cstbtnupdate
+            // 
+            this.cstbtnupdate.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cstbtnupdate.Location = new System.Drawing.Point(19, 146);
+            this.cstbtnupdate.Name = "cstbtnupdate";
+            this.cstbtnupdate.Size = new System.Drawing.Size(75, 28);
+            this.cstbtnupdate.TabIndex = 29;
+            this.cstbtnupdate.Text = "Update";
+            this.cstbtnupdate.UseVisualStyleBackColor = true;
+            // 
+            // cstbtncancel
+            // 
+            this.cstbtncancel.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cstbtncancel.Location = new System.Drawing.Point(19, 190);
+            this.cstbtncancel.Name = "cstbtncancel";
+            this.cstbtncancel.Size = new System.Drawing.Size(75, 28);
+            this.cstbtncancel.TabIndex = 27;
+            this.cstbtncancel.Text = "Cancel";
+            this.cstbtncancel.UseVisualStyleBackColor = true;
+            // 
+            // cstbtnsave
+            // 
+            this.cstbtnsave.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cstbtnsave.Location = new System.Drawing.Point(19, 13);
+            this.cstbtnsave.Name = "cstbtnsave";
+            this.cstbtnsave.Size = new System.Drawing.Size(75, 28);
+            this.cstbtnsave.TabIndex = 26;
+            this.cstbtnsave.Text = "Save";
+            this.cstbtnsave.UseVisualStyleBackColor = true;
+            this.cstbtnsave.Click += new System.EventHandler(this.btnsave_Click);
+            // 
+            // cstbtnedit
+            // 
+            this.cstbtnedit.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cstbtnedit.Location = new System.Drawing.Point(19, 102);
+            this.cstbtnedit.Name = "cstbtnedit";
+            this.cstbtnedit.Size = new System.Drawing.Size(75, 28);
+            this.cstbtnedit.TabIndex = 28;
+            this.cstbtnedit.Text = "Edit";
+            this.cstbtnedit.UseVisualStyleBackColor = true;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(243, 22);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(244, 33);
+            this.label10.TabIndex = 31;
+            this.label10.Text = "Customer Creation";
+            // 
             // customer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(815, 576);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.btngropubox);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox1);
             this.Name = "customer";
             this.Text = "customer";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridcust)).EndInit();
+            this.btngropubox.ResumeLayout(false);
+            this.btngropubox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -363,32 +391,34 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtname;
-        private System.Windows.Forms.TextBox txtaddress;
+        private System.Windows.Forms.TextBox csttxtname;
+        private System.Windows.Forms.TextBox csttxtaddress;
         private System.Windows.Forms.Label lbladd;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox csttxtmono;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtid;
+        private System.Windows.Forms.TextBox csttxtid;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox txtstb;
+        private System.Windows.Forms.DateTimePicker cstdtp;
+        private System.Windows.Forms.TextBox csttxtstb;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtrent;
+        private System.Windows.Forms.TextBox csttxtrent;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtcharge;
+        private System.Windows.Forms.TextBox csttxtcharge;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btndelete;
-        private System.Windows.Forms.Button btnupdate;
-        private System.Windows.Forms.Button btnedit;
-        private System.Windows.Forms.Button btncancel;
-        private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView gridcust;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox csttxtbalance;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.GroupBox btngropubox;
+        private System.Windows.Forms.Button cstbtndelete;
+        private System.Windows.Forms.Button cstbtnupdate;
+        private System.Windows.Forms.Button cstbtncancel;
+        private System.Windows.Forms.Button cstbtnsave;
+        private System.Windows.Forms.Button cstbtnedit;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button btnclose1;
+        private System.Windows.Forms.Label label10;
     }
 }

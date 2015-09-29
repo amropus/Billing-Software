@@ -34,15 +34,15 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.billgroupbox = new System.Windows.Forms.GroupBox();
             this.btncancel = new System.Windows.Forms.Button();
-            this.btnsave = new System.Windows.Forms.Button();
+            this.btnreport = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnclose1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridbill)).BeginInit();
-            this.groupBox2.SuspendLayout();
+            this.billgroupbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,19 +101,19 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(32, 45);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(514, 74);
-            this.groupBox2.TabIndex = 18;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Search Bill";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            this.billgroupbox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.billgroupbox.Controls.Add(this.label2);
+            this.billgroupbox.Controls.Add(this.textBox2);
+            this.billgroupbox.Controls.Add(this.textBox4);
+            this.billgroupbox.Controls.Add(this.label8);
+            this.billgroupbox.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.billgroupbox.Location = new System.Drawing.Point(32, 45);
+            this.billgroupbox.Name = "groupBox2";
+            this.billgroupbox.Size = new System.Drawing.Size(514, 74);
+            this.billgroupbox.TabIndex = 18;
+            this.billgroupbox.TabStop = false;
+            this.billgroupbox.Text = "Search Bill";
+            this.billgroupbox.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // btncancel
             // 
@@ -127,13 +127,13 @@
             // 
             // btnsave
             // 
-            this.btnsave.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsave.Location = new System.Drawing.Point(70, 345);
-            this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(92, 31);
-            this.btnsave.TabIndex = 22;
-            this.btnsave.Text = "Show All";
-            this.btnsave.UseVisualStyleBackColor = true;
+            this.btnreport.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnreport.Location = new System.Drawing.Point(70, 345);
+            this.btnreport.Name = "btnsave";
+            this.btnreport.Size = new System.Drawing.Size(92, 31);
+            this.btnreport.TabIndex = 22;
+            this.btnreport.Text = "Show All";
+            this.btnreport.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -147,13 +147,13 @@
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(198, 345);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(70, 31);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "Print";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnclose1.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnclose1.Location = new System.Drawing.Point(198, 345);
+            this.btnclose1.Name = "button2";
+            this.btnclose1.Size = new System.Drawing.Size(70, 31);
+            this.btnclose1.TabIndex = 25;
+            this.btnclose1.Text = "Print";
+            this.btnclose1.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -168,18 +168,18 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 590);
-            this.Controls.Add(this.button2);
+           // this.Controls.Add(this.btnclose2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btncancel);
-            this.Controls.Add(this.btnsave);
-            this.Controls.Add(this.groupBox2);
+//            this.Controls.Add(this.btnreport);
+//            this.Controls.Add(this.billgroupbox);
             this.Controls.Add(this.panel2);
             this.Name = "bill";
             this.Text = "bill";
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridbill)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.billgroupbox.ResumeLayout(false);
+            this.billgroupbox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

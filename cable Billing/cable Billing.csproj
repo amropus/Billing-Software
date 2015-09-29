@@ -56,6 +56,24 @@
     <Compile Include="NewFolder\Amropussplash1.Designer.cs">
       <DependentUpon>Amropussplash1.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewFolder\sms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFolder\sms.Designer.cs">
+      <DependentUpon>sms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder\backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFolder\backup.Designer.cs">
+      <DependentUpon>backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder\changepassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFolder\changepassword.Designer.cs">
+      <DependentUpon>changepassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewFolder\datewisecollection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +117,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewFolder\Amropussplash1.resx">
       <DependentUpon>Amropussplash1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder\sms.resx">
+      <DependentUpon>sms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder\backup.resx">
+      <DependentUpon>backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder\changepassword.resx">
+      <DependentUpon>changepassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewFolder\datewisecollection.resx">
       <DependentUpon>datewisecollection.cs</DependentUpon>
